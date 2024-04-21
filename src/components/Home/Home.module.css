@@ -1,0 +1,262 @@
+.section1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textContainer {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 50px;
+}
+.imageContainer {
+  width: 45%;
+  height: 90%;
+  border-radius: 50px;
+}
+.textContainer h1 {
+  font-size: 50px;
+}
+.zone {
+  color: #718096;
+}
+.section2 {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section2Container {
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+.text {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #d8d7d740;
+  border-top: 1px solid #d8d7d740;
+  box-shadow: 0px 2px #9e9d9d40;
+  border-radius: 5px;
+}
+.image {
+  width: 40%;
+  height: 100%;
+}
+.establishedContainer {
+  width: 80%;
+  height: 100%;
+  text-align: justify;
+}
+.establishedContainer h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.readMorecontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.loremText {
+  color: #718096;
+  margin-bottom: 30px;
+}
+.date {
+  color: #718096;
+}
+.readMore {
+  font-weight: bold;
+  cursor: pointer;
+}
+.section3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 280px;
+  height: 380px;
+  box-shadow: 0px 3px #9e9d9d40;
+  transition:  transform 1s;
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.cardImage {
+  width: 100%;
+  height: 40%;
+}
+.cardTextContainer {
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.cardHead {
+  width: 100%;
+  height: 20%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.cardText {
+  width: 100%;
+  height: 60%;
+  color: #718096;
+  display: flex;
+  align-items: center;
+}
+.cardRead {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardDate {
+  color: #718096;
+}
+.cardReadText {
+  font-weight: bold;
+  cursor: pointer;
+}
+.section4 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4Container {
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+.loremipsumTextContainer {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 250, 252);
+}
+.loremIpsumText {
+  color: #718096;
+}
+.loremHeadContainer {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.loremipsumTextContainer h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.laptopImageContainer {
+  width: 55%;
+  height: 100%;
+}
+.ReadMoreTextContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.loremIpsumText {
+  margin-bottom: 30px;
+}
+.seemore{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+}
+.seemore button{
+    width: 122px;
+    height: 37px;
+    background-color: rgb(107, 70, 193);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .textContainer {
+    width: 100%;
+    height: 40%;
+    margin-left: 0px;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 60%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .section1 {
+    height: 600px;
+  }
+  .section2 {
+    height: 850px;
+  }
+  .section2Container {
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+    height: 50%;
+  }
+  .image {
+    width: 100%;
+    height: 50%;
+  }
+  .section4 {
+    height: 1200px;
+  }
+  .section4Container {
+    flex-direction: column;
+  }
+  .loremipsumTextContainer {
+    width: 100%;
+    height: 45%;
+  }
+  .laptopImageContainer {
+    width: 100%;
+    height: 55%;
+  }
+  .loremHeadContainer {
+    width: 90%;
+  }
+}

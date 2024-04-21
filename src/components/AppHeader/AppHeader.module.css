@@ -1,0 +1,56 @@
+.nav {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.navHead {
+  font-size: 20px;
+  font-weight: 700;
+}
+.navItems {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.navItems div:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 149);
+  text-decoration: underline;
+}
+.hamburgur {
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburgur {
+    display: block;
+    font-size: 20px;
+  }
+  .navItems {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .navItems {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  .navItems div {
+    margin-top: 10px;
+  }
+  .nav {
+    flex-direction: row-reverse;
+  }
+}
